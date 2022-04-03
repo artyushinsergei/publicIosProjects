@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    //MARK: Outlet
+    //MARK: IBOutlet
     
     // Метод init для выделения памятb
     
