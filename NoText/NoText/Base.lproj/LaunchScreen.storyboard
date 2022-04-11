@@ -18,13 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NoText" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG5-iW-V3E">
-                                <rect key="frame" x="102" y="413" width="226" height="70"/>
+                                <rect key="frame" x="127" y="419" width="160.5" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="simple notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-bI-fL0">
-                                <rect key="frame" x="136" y="491" width="143" height="21"/>
+                                <rect key="frame" x="158.5" y="494" width="97" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VeX-dM-Rn1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,13 +36,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UmQ-bI-fL0" firstAttribute="centerX" secondItem="AG5-iW-V3E" secondAttribute="centerX" constant="-7.5" id="RUS-JL-XAP"/>
-                            <constraint firstItem="AG5-iW-V3E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="369" id="p44-DT-con"/>
-                            <constraint firstItem="AG5-iW-V3E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="pjL-Xy-j0C"/>
-                            <constraint firstItem="AG5-iW-V3E" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qsI-43-19p"/>
-                            <constraint firstItem="UmQ-bI-fL0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="vcj-l9-HGT"/>
-                            <constraint firstItem="AG5-iW-V3E" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="8" id="y5i-Zh-V0l"/>
-                            <constraint firstItem="UmQ-bI-fL0" firstAttribute="top" secondItem="AG5-iW-V3E" secondAttribute="bottom" constant="8" id="ykO-Da-GTZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UmQ-bI-fL0" secondAttribute="trailing" symbolic="YES" id="1aT-2x-cZK"/>
+                            <constraint firstItem="AG5-iW-V3E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3pI-QX-69R"/>
+                            <constraint firstItem="UmQ-bI-fL0" firstAttribute="top" secondItem="AG5-iW-V3E" secondAttribute="bottom" constant="8" symbolic="YES" id="RU9-12-MOx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UmQ-bI-fL0" secondAttribute="bottom" constant="347" id="X47-rx-o95"/>
+                            <constraint firstItem="UmQ-bI-fL0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158.5" id="kdC-jm-PWc"/>
                         </constraints>
                     </view>
                 </viewController>
