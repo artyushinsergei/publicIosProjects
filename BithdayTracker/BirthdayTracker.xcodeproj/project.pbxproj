@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85521F002806A3BA00199F45 /* BirthdaysTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85521EFF2806A3BA00199F45 /* BirthdaysTableTableViewController.swift */; };
 		856564AA280163B800548CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856564A9280163B800548CB9 /* AppDelegate.swift */; };
 		856564AC280163B800548CB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856564AB280163B800548CB9 /* SceneDelegate.swift */; };
-		856564AE280163B800548CB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856564AD280163B800548CB9 /* ViewController.swift */; };
+		856564AE280163B800548CB9 /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856564AD280163B800548CB9 /* AddBirthdayViewController.swift */; };
 		856564B1280163B900548CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856564AF280163B900548CB9 /* Main.storyboard */; };
 		856564B3280163BA00548CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856564B2280163BA00548CB9 /* Assets.xcassets */; };
 		856564B6280163BA00548CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856564B4280163BA00548CB9 /* LaunchScreen.storyboard */; };
+		856564BE2804051D00548CB9 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856564BD2804051D00548CB9 /* Birthday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		856564A6280163B800548CB9 /* BithdayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BithdayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85521EFF2806A3BA00199F45 /* BirthdaysTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysTableTableViewController.swift; sourceTree = "<group>"; };
+		856564A6280163B800548CB9 /* BirthdayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856564A9280163B800548CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		856564AB280163B800548CB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		856564AD280163B800548CB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		856564AD280163B800548CB9 /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
 		856564B0280163B900548CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		856564B2280163BA00548CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		856564B5280163BA00548CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		856564B7280163BA00548CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856564BD2804051D00548CB9 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 		856564A7280163B800548CB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				856564A6280163B800548CB9 /* BithdayTracker.app */,
+				856564A6280163B800548CB9 /* BirthdayTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,11 +62,13 @@
 			children = (
 				856564A9280163B800548CB9 /* AppDelegate.swift */,
 				856564AB280163B800548CB9 /* SceneDelegate.swift */,
-				856564AD280163B800548CB9 /* ViewController.swift */,
+				856564AD280163B800548CB9 /* AddBirthdayViewController.swift */,
+				85521EFF2806A3BA00199F45 /* BirthdaysTableTableViewController.swift */,
 				856564AF280163B900548CB9 /* Main.storyboard */,
 				856564B2280163BA00548CB9 /* Assets.xcassets */,
 				856564B4280163BA00548CB9 /* LaunchScreen.storyboard */,
 				856564B7280163BA00548CB9 /* Info.plist */,
+				856564BD2804051D00548CB9 /* Birthday.swift */,
 			);
 			path = BithdayTracker;
 			sourceTree = "<group>";
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		856564A5280163B800548CB9 /* BithdayTracker */ = {
+		856564A5280163B800548CB9 /* BirthdayTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 856564BA280163BA00548CB9 /* Build configuration list for PBXNativeTarget "BithdayTracker" */;
+			buildConfigurationList = 856564BA280163BA00548CB9 /* Build configuration list for PBXNativeTarget "BirthdayTracker" */;
 			buildPhases = (
 				856564A2280163B800548CB9 /* Sources */,
 				856564A3280163B800548CB9 /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = BithdayTracker;
+			name = BirthdayTracker;
 			productName = BithdayTracker;
-			productReference = 856564A6280163B800548CB9 /* BithdayTracker.app */;
+			productReference = 856564A6280163B800548CB9 /* BirthdayTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 856564A1280163B800548CB9 /* Build configuration list for PBXProject "BithdayTracker" */;
+			buildConfigurationList = 856564A1280163B800548CB9 /* Build configuration list for PBXProject "BirthdayTracker" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				856564A5280163B800548CB9 /* BithdayTracker */,
+				856564A5280163B800548CB9 /* BirthdayTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856564AE280163B800548CB9 /* ViewController.swift in Sources */,
+				856564AE280163B800548CB9 /* AddBirthdayViewController.swift in Sources */,
+				856564BE2804051D00548CB9 /* Birthday.swift in Sources */,
 				856564AA280163B800548CB9 /* AppDelegate.swift in Sources */,
 				856564AC280163B800548CB9 /* SceneDelegate.swift in Sources */,
+				85521F002806A3BA00199F45 /* BirthdaysTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +300,7 @@
 				DEVELOPMENT_TEAM = 9YCHZYVS3V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BithdayTracker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bitthday Tracker";
+				INFOPLIST_KEY_CFBundleDisplayName = "Birthday Tracker";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +329,7 @@
 				DEVELOPMENT_TEAM = 9YCHZYVS3V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BithdayTracker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bitthday Tracker";
+				INFOPLIST_KEY_CFBundleDisplayName = "Birthday Tracker";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		856564A1280163B800548CB9 /* Build configuration list for PBXProject "BithdayTracker" */ = {
+		856564A1280163B800548CB9 /* Build configuration list for PBXProject "BirthdayTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				856564B8280163BA00548CB9 /* Debug */,
@@ -352,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		856564BA280163BA00548CB9 /* Build configuration list for PBXNativeTarget "BithdayTracker" */ = {
+		856564BA280163BA00548CB9 /* Build configuration list for PBXNativeTarget "BirthdayTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				856564BB280163BA00548CB9 /* Debug */,
