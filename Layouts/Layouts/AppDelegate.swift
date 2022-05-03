@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BithdayTracker
+//  Layouts
 //
-//  Created by SERGEI on 09.04.2022.
+//  Created by SERGEI on 27.04.2022.
 //
 
 import UIKit
@@ -10,8 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    //let appDelegate = UIApplicationDelegate.shared.delegate as! AppDelegate
-    
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

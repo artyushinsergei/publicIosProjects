@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="1706" y="-858"/>
         </scene>
-        <!--Note Forn-->
+        <!--Note Form-->
         <scene sceneID="gaR-Bm-8cW">
             <objects>
                 <viewController id="EWZ-3B-1Tf" sceneMemberID="viewController">
@@ -96,9 +96,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the note title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1z-lA-ayj">
-                                <rect key="frame" x="20" y="163" width="370" height="40"/>
+                                <rect key="frame" x="20" y="163" width="162" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="370" id="ZKV-Xd-r8y"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="dOT-Hi-cqc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -142,12 +141,13 @@
                             <constraint firstItem="qNo-Lv-PVP" firstAttribute="leading" secondItem="NK6-UU-gCb" secondAttribute="leading" id="Qfl-V2-HWl"/>
                             <constraint firstItem="KU9-2r-uM3" firstAttribute="top" secondItem="qNo-Lv-PVP" secondAttribute="bottom" constant="20" id="UY7-lm-pYd"/>
                             <constraint firstItem="jKP-dN-nBy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NK6-UU-gCb" secondAttribute="trailing" symbolic="YES" id="k67-Ar-xlZ"/>
+                            <constraint firstItem="jKP-dN-nBy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A1z-lA-ayj" secondAttribute="trailing" symbolic="YES" id="pot-61-v4I"/>
                             <constraint firstItem="cXX-bX-pvd" firstAttribute="leading" secondItem="jKP-dN-nBy" secondAttribute="leading" constant="20" id="vLq-Mn-7yg"/>
                             <constraint firstItem="cXX-bX-pvd" firstAttribute="top" secondItem="KU9-2r-uM3" secondAttribute="bottom" constant="93" id="wX6-gG-m3H"/>
                             <constraint firstItem="jKP-dN-nBy" firstAttribute="trailing" secondItem="qNo-Lv-PVP" secondAttribute="trailing" constant="204" id="yHb-P4-SHs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Note Forn" id="5rK-3a-76q"/>
+                    <navigationItem key="navigationItem" title="Note Form" id="5rK-3a-76q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3W-xi-B4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,14 +11,20 @@ import UIKit
 class AddViewController: UIViewController {
 
     var saveButton = UIButton()
-    var titleText = UITextField()
+    var titleTextField = UITextField()
     var titleLable = UILabel()
     var mainTextLable = UILabel()
-    var mainText = UITextView
+    var mainTextField = UITextField()
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Note form"
+        
+        let titleText = titleTextField.text ?? ""
+        let mainText = mainTextField.text ?? ""
+        
+        let newNote = Note(titleText: titleText, mainText: mainText)
         
         mainTextLableFunc()
         saveButtonFunc()
@@ -32,27 +38,24 @@ class AddViewController: UIViewController {
         titleLable.frame = CGRect(x: 25, y: 120, width: 350, height: 25)
         titleLable.text = "Note title"
         titleLable.font = UIFont.boldSystemFont(ofSize: 30)
-        //titleLable.font.withSize(30.0)
-        
         titleLable.textAlignment = .left
         titleLable.textColor = UIColor.green
-        //Выровнять по середине
         view.addSubview(titleLable)
         
     }
 
     //MARK: Поле ввода заголовка
     func titleTextFieldFunc(){
-        titleText.frame = CGRect(x: 12, y: 155, width: 350, height: 28)
-        titleText.placeholder = " Enter the title"
-        titleText.textColor = UIColor.green
-        titleText.font = UIFont.boldSystemFont(ofSize: 20)
-        titleText.layer.cornerRadius = 5
-        titleText.layer.borderWidth = 1
-        titleText.layer.borderColor = CIColor.magenta
-        //titleText.layer.borderColor = UIColor.lightGray.cgColor
+        titleTextField.frame = CGRect(x: 12, y: 155, width: 350, height: 28)
+        titleTextField.placeholder = " Enter the title"
+        titleTextField.textColor = UIColor.green
+        titleTextField.font = UIFont.boldSystemFont(ofSize: 20)
+        titleTextField.layer.cornerRadius = 5
+        titleTextField.layer.borderWidth = 1
+        //titleText.layer.borderColor = CIColor.magenta
+        titleTextField.layer.borderColor = UIColor.lightGray.cgColor
         
-        view.addSubview(titleText)
+        view.addSubview(titleTextField)
         
     }
     
@@ -77,7 +80,6 @@ class AddViewController: UIViewController {
         saveButton.frame = CGRect(x: 12, y: 665 , width: 350, height: 45)
         saveButton.setTitle("Save", for: .normal)
         saveButton.setTitleColor(.green, for: .normal)
-        saveButton.tintColor = UIColor.green
         saveButton.backgroundColor = .clear
         saveButton.layer.cornerRadius = 5
         saveButton.layer.borderWidth = 1

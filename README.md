@@ -8,4 +8,6 @@ PublicProjects
 
 Проект Bithday Traker - по книге swift для детей
 
+Проект Layouts - набор макетов с адаптивной версткой
+
 
