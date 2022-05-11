@@ -20,7 +20,7 @@ class VerificationViewController: UIViewController {
     private let statusLable = StatusLable()
     private let mailTextField = MailTextField()
     private let verificationButton = VerificationButton()
-    private let collectionView = MailsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    private let collectionView = MailsCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     private lazy var stackView = UIStackView(arrangedSubviews: [mailTextField,verificationButton,collectionView], axis: .vertical, spacing: 20)
 
     override func viewDidLoad() {

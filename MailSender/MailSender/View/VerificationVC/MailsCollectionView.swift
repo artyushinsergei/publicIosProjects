@@ -23,7 +23,8 @@ class MailsCollectionView : UICollectionView{
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         configure()
-        register(MailCollectionViewCell.self, forCellWithReuseIdentifier: IdCell.idMailCell.rawValue)
+        register(MailCollectionViewCell.self,
+                 forCellWithReuseIdentifier: IdCell.idMailCell.rawValue)
     }
     
     required init?(coder: NSCoder) {
@@ -45,8 +46,10 @@ extension MailsCollectionView: UICollectionViewDelegate {
     }
 }
 
+//MARK: - UICollectionViewDelegateFlowLayout
 extension MailsCollectionView: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width / 2 - 5, height: 40)
+        CGSize(width: collectionView.frame.width / 2 - 5,
+               height: 40)
     }
 }
