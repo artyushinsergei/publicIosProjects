@@ -36,26 +36,43 @@ class VerificationViewController: UIViewController {
         view.addSubview(background)
         view.addSubview(statusLable)
         view.addSubview(stackView)
-
+        verificationButton.addTarget(self, action: #selector(verificationButtonTapped), for: .touchUpInside)
     }
     
     private func setDelegates(){
         collectionView.dataSource = self
         collectionView.selectMailDelegate = self
+        mailTextField.textFiedlDelegate = self
     }
 
+    
+    @objc private func verificationButtonTapped(){
+        print("Button typed ")
+    }
 
 }
+
+//MARK: - SelectProposedMailProtocol
 
 extension VerificationViewController: SelectProposedMailProtocol{
     func selectProposedMail(indexPath: IndexPath) {
         print(indexPath)
     }
-    
-    
+
 }
 
-//MARK: - SetConstrains
+//MARK: - ActionsMailTextField
+extension VerificationViewController: ActionsMailTextField{
+    func typingText(text: String) {
+        print(text)
+    }
+    
+    func clearOutTextField() {
+        print("Clear")
+    }
+}
+
+//MARK: - UICollectionViewDataSource
 
 extension VerificationViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -63,7 +80,7 @@ extension VerificationViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: idCell.idMailCell.rawValue, for: indexPath) as? MailCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IdCell.idMailCell.rawValue, for: indexPath) as? MailCollectionViewCell
         else {
             return UICollectionViewCell()
             
@@ -74,6 +91,7 @@ extension VerificationViewController: UICollectionViewDataSource{
     
 }
 
+//MARK: - SetConstrains
 extension VerificationViewController{
     private func setConstrains(){
         NSLayoutConstraint.activate([
