@@ -10,6 +10,17 @@ import UIKit
 
 class StatusLable: UILabel{
 
+    //Наблюдатель didSet для изменения параметра text
+    public var isValid  = false {
+        didSet{
+            if self.isValid{
+                setValidSetings()
+            }else{
+                setNotValidSetings()
+            }
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -27,4 +38,13 @@ class StatusLable: UILabel{
         translatesAutoresizingMaskIntoConstraints = false
     }
     
+    private func setNotValidSetings(){
+        text = "Mail is not valid. Example: name@domain.ru"
+        textColor = .red
+    }
+    
+    private func setValidSetings(){
+        text = "Mail is valid"
+        textColor = .green
+    }
 }

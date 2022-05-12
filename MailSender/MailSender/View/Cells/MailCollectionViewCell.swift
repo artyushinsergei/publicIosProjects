@@ -34,6 +34,13 @@ class MailCollectionViewCell: UICollectionViewCell{
         contentView.layer.cornerRadius = 10
         addSubview(domainLable)
     }
+    private func configure(mailLableText:String){
+        domainLable.text = mailLableText
+    }
+    
+    public func cellConfigure(mailLableText:String){
+        configure(mailLableText: mailLableText)
+    }
     
 }
 
