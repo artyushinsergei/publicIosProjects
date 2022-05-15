@@ -59,7 +59,15 @@ class VerificationViewController: UIViewController {
 
 extension VerificationViewController: SelectProposedMailProtocol{
     func selectProposedMail(indexPath: IndexPath) {
-        print(indexPath)
+        guard let text = mailTextField.text else {return}
+        verificationModel.getMailName(text: text)
+        let domainMail = verificationModel.filterMailArray[indexPath.row]
+        let mailFullName = verificationModel.nameMail + domainMail
+        mailTextField.text = mailFullName
+        statusLable.isValid = mailFullName.isValid()
+        verificationButton.isValid = mailFullName.isValid()
+        verificationModel.filterMailArray = []
+        collectionView.reloadData()
     }
 
 }
@@ -74,7 +82,10 @@ extension VerificationViewController: ActionsMailTextField{
     }
     
     func clearOutTextField() {
-        print("Clear")
+        statusLable.setDefaultSettings()
+        verificationButton.setDefaultSettings()
+        verificationModel.filterMailArray =  []
+        collectionView.reloadData()
     }
 }
 

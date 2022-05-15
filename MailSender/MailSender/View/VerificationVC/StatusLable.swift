@@ -47,4 +47,8 @@ class StatusLable: UILabel{
         text = "Mail is valid"
         textColor = .green
     }
+    
+    public func setDefaultSettings(){
+        configure()
+    }
 }
