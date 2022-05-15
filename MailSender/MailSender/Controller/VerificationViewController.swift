@@ -67,6 +67,8 @@ extension VerificationViewController: SelectProposedMailProtocol{
 //MARK: - ActionsMailTextField
 extension VerificationViewController: ActionsMailTextField{
     func typingText(text: String) {
+        statusLable.isValid = text.isValid()
+        verificationButton.isValid = text.isValid()
         verificationModel.getFiltredMail(text: text)
         collectionView.reloadData()
     }
