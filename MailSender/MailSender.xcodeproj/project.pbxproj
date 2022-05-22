@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85451350283A81C900BFD1D4 /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8545134F283A81C900BFD1D4 /* MailApiKey.swift */; };
+		85451352283A8D2B00BFD1D4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85451351283A8D2A00BFD1D4 /* NetworkRequest.swift */; };
+		85451354283AB67E00BFD1D4 /* MailResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85451353283AB67E00BFD1D4 /* MailResponseModel.swift */; };
 		8548256828215D8C00319CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548256728215D8C00319CC1 /* AppDelegate.swift */; };
 		8548256C28215D8C00319CC1 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548256B28215D8C00319CC1 /* VerificationViewController.swift */; };
 		8548257128215D8D00319CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8548257028215D8D00319CC1 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8545134F283A81C900BFD1D4 /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
+		85451351283A8D2A00BFD1D4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		85451353283AB67E00BFD1D4 /* MailResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailResponseModel.swift; sourceTree = "<group>"; };
 		8548256428215D8C00319CC1 /* MailSender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailSender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8548256728215D8C00319CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8548256B28215D8C00319CC1 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8545134E283A819200BFD1D4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8545134F283A81C900BFD1D4 /* MailApiKey.swift */,
+				85451351283A8D2A00BFD1D4 /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		8548255B28215D8C00319CC1 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +85,7 @@
 		8548256628215D8C00319CC1 /* MailSender */ = {
 			isa = PBXGroup;
 			children = (
+				8545134E283A819200BFD1D4 /* Network */,
 				8548258728217CE700319CC1 /* Application */,
 				8548257B28215F5C00319CC1 /* Model */,
 				8548257C28215F6400319CC1 /* View */,
@@ -84,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				85482592282CDDB400319CC1 /* VerificationModel.swift */,
+				85451353283AB67E00BFD1D4 /* MailResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,13 +250,16 @@
 			files = (
 				8548256C28215D8C00319CC1 /* VerificationViewController.swift in Sources */,
 				85482590282AA58100319CC1 /* MailCollectionViewCell.swift in Sources */,
+				85451350283A81C900BFD1D4 /* MailApiKey.swift in Sources */,
 				854825822821706D00319CC1 /* StatusLable.swift in Sources */,
 				8548256828215D8C00319CC1 /* AppDelegate.swift in Sources */,
+				85451354283AB67E00BFD1D4 /* MailResponseModel.swift in Sources */,
 				85482593282CDDB400319CC1 /* VerificationModel.swift in Sources */,
 				854825862821748E00319CC1 /* UIStackView + Extensions.swift in Sources */,
 				85482595282CE4BE00319CC1 /* String + Extansions.swift in Sources */,
 				8548258D282A9B7700319CC1 /* MailsCollectionView.swift in Sources */,
 				8548258B28217EEC00319CC1 /* VerificationButton.swift in Sources */,
+				85451352283A8D2B00BFD1D4 /* NetworkRequest.swift in Sources */,
 				8548258928217D0E00319CC1 /* MailTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
