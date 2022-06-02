@@ -59,14 +59,14 @@ class ViewController: UIViewController {
         resetButton.addTarget(self, action: #selector(resetButtonTapped), for: .touchUpInside)
         
     }
-    
+    //MARK: Кнопка для добавления адресса
     @objc func addAddressButtonTapped(){
         alertController(title: "Add", placeHolde: "Enter ur address") { [self] (text) in
             print(text)
             setupPlacemark(addressPlace: text)
         }
     }
-    
+    //MARK: Кнопка для построения маршрута
     @objc func routeButtonTapped(){
         for index in 0...annotationsArray.count - 2{
             createDirectionRequest(startCoordinate: annotationsArray[index].coordinate, destinationCoordinate: annotationsArray[index + 1].coordinate)
@@ -74,15 +74,15 @@ class ViewController: UIViewController {
         
         mapView.showAnnotations(annotationsArray, animated: true)
     }
-    
+    //MARK: Кнопка для стирания
     @objc func resetButtonTapped(){
-        mapView.removeOverlay(mapView.overlays)
-        mapView.removeAnnotation(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
+        mapView.removeAnnotations(mapView.annotations)
         annotationsArray = [MKPointAnnotation]()
         routeButton.isHidden = true
         resetButton.isHidden = true
     }
-
+    //MARK: Создание аннотаций 
     private func setupPlacemark(addressPlace: String){
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(addressPlace) { [self] placemarks, error in
@@ -134,16 +134,14 @@ class ViewController: UIViewController {
             }
             
             var minRoute = response.routes[0]
-            
             for route in response.routes{
                 minRoute = (route.distance < minRoute.distance) ? route : minRoute
             }
-            
             self.mapView.addOverlay(minRoute.polyline)
         }
     }
 }
-
+//MARK: Отрисовка карты
 extension ViewController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let render = MKPolylineRenderer(overlay: overlay as! MKPolyline)
@@ -151,7 +149,7 @@ extension ViewController: MKMapViewDelegate{
         return render
     }
 }
-
+//MARK: Расширение для расположения кнопок
 extension ViewController{
     func setConstrains(){
         view.addSubview(mapView)

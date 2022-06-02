@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: Расширение для алерта
 extension UIViewController{
     func alertController(title: String,placeHolde: String, complitionHandler: @escaping (String) -> Void){
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
