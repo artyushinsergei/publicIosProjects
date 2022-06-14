@@ -16,6 +16,7 @@
 		851DEFC728577C470087DCB9 /* MapKitProdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DEFC628577C470087DCB9 /* MapKitProdTests.swift */; };
 		851DEFD128577C470087DCB9 /* MapKitProdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DEFD028577C470087DCB9 /* MapKitProdUITests.swift */; };
 		851DEFD328577C470087DCB9 /* MapKitProdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DEFD228577C470087DCB9 /* MapKitProdUITestsLaunchTests.swift */; };
+		851DEFE1285862BB0087DCB9 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DEFE0285862BB0087DCB9 /* Places.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		851DEFCC28577C470087DCB9 /* MapKitProdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitProdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		851DEFD028577C470087DCB9 /* MapKitProdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitProdUITests.swift; sourceTree = "<group>"; };
 		851DEFD228577C470087DCB9 /* MapKitProdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitProdUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		851DEFDF285860230087DCB9 /* Places.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Places.geojson; sourceTree = "<group>"; };
+		851DEFE0285862BB0087DCB9 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				851DEFB828577C470087DCB9 /* Assets.xcassets */,
 				851DEFBA28577C470087DCB9 /* LaunchScreen.storyboard */,
 				851DEFBD28577C470087DCB9 /* Info.plist */,
+				851DEFDF285860230087DCB9 /* Places.geojson */,
+				851DEFE0285862BB0087DCB9 /* Places.swift */,
 			);
 			path = MapKitProd;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				851DEFB428577C460087DCB9 /* ViewController.swift in Sources */,
 				851DEFB028577C460087DCB9 /* AppDelegate.swift in Sources */,
 				851DEFB228577C460087DCB9 /* SceneDelegate.swift in Sources */,
+				851DEFE1285862BB0087DCB9 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

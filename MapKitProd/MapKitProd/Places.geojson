@@ -1,0 +1,17 @@
+{
+    "type": "FeatureCollection",
+    "features":[
+        {
+        "type":"Feature",
+            "properties":{
+                "location":"Казанская пл. 2",
+                "discipline":"Cathedral",
+                "title":"Казанский собор",
+                },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[30.324495,59.934257]
+            }
+        ]
+    }
+}

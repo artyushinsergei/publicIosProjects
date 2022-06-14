@@ -25,8 +25,15 @@ class ViewController: UIViewController {
         
         let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 100000)
         mapView.setCameraZoomRange(zoomRange, animated: true)
+        
+        let kc = Places(title: "Казанский собор",
+                        locationName: "Казанская пл. 2",
+                        discipline: "Cathedral",
+                        coordinate: CLLocationCoordinate2D(latitude: 59.934257, longitude: 30.324495))
+        
+        mapView.addAnnotation(kc)
     }
-
+    
 
 }
 
