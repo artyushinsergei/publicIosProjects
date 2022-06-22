@@ -46,3 +46,25 @@ extension MKMapView{
     
 }
  
+extension ViewController: MKMapViewDelegate{
+    func mapView
+    
+    
+    
+//     {
+//        guard let annotation = annotation as? Places else {
+//            return nil
+//        }
+//
+//        let identifier = "places"
+//        let view: MKMarkerAnnotationView
+//    }
+//
+//    if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: "places") as? MKMarkerAnnotationView{
+//        dequeuedView.annotation = annotation
+//        view = dequeuedView
+//    } else {
+//        view = MKMarkerAnnotationView(annotation: MKAnnotation)
+//    }
+//}
+}
