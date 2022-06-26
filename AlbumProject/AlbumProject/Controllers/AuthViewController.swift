@@ -110,8 +110,8 @@ class AuthViewController: UIViewController {
     
     // MARK: press singUp
     @objc private func singUpButtonTapped(){
-        
-        self.present(SingUpViewController, animated: true, completion: nil)
+        let singUpViewController = SingUpViewController()
+        //self.present(singUpViewController, animated: true, completion: nil)
     }
 
 
@@ -139,13 +139,20 @@ extension AuthViewController {
         NSLayoutConstraint.activate([
             backgroundView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             backgroundView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor),
-            backgroundView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
-            backgroundView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+            backgroundView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            backgroundView.widthAnchor.constraint(equalTo: view.widthAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            textFieldStackView.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
+            textFieldStackView.centerYAnchor.constraint(equalTo: backgroundView.centerYAnchor),
+            textFieldStackView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 20),
+            textFieldStackView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -20)
         ])
         
         NSLayoutConstraint.activate([
             loginLable.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor),
-            loginLable.bottomAnchor.constraint(equalTo: textFieldStackView.bottomAnchor, constant: -30)
+            loginLable.bottomAnchor.constraint(equalTo: textFieldStackView.topAnchor, constant: -30)
         ])
         
         NSLayoutConstraint.activate([
@@ -155,7 +162,7 @@ extension AuthViewController {
         
         NSLayoutConstraint.activate([
             buttonsStackView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 20),
-            buttonsStackView.topAnchor.constraint(equalTo: textFieldStackView.topAnchor, constant: 30),
+            buttonsStackView.topAnchor.constraint(equalTo: textFieldStackView.bottomAnchor, constant: 30),
             buttonsStackView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -20)
         ])
     }
