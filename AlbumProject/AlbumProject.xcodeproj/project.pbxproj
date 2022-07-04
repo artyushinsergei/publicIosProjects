@@ -18,6 +18,12 @@
 		85FCD9EC2868A82600A1ACC7 /* AlbumProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCD9EB2868A82600A1ACC7 /* AlbumProjectUITestsLaunchTests.swift */; };
 		85FCD9FD2868BD7900A1ACC7 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCD9FC2868BD7900A1ACC7 /* UIStackViewExtensions.swift */; };
 		85FCD9FF2868CDA100A1ACC7 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCD9FE2868CDA100A1ACC7 /* SingUpViewController.swift */; };
+		85FCDA012871C13700A1ACC7 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDA002871C13700A1ACC7 /* AlbumViewController.swift */; };
+		85FCDA032872BD9600A1ACC7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDA022872BD9600A1ACC7 /* UIViewControllerExtension.swift */; };
+		85FCDA052872C23F00A1ACC7 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDA042872C23F00A1ACC7 /* DetailAlbumViewController.swift */; };
+		85FCDA072872C25900A1ACC7 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDA062872C25900A1ACC7 /* UserInfoViewController.swift */; };
+		85FCDA092872C28300A1ACC7 /* AlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDA082872C28200A1ACC7 /* AlbumsTableViewCell.swift */; };
+		85FCDA0B2872C2BD00A1ACC7 /* SongsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDA0A2872C2BD00A1ACC7 /* SongsCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		85FCD9EB2868A82600A1ACC7 /* AlbumProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		85FCD9FC2868BD7900A1ACC7 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		85FCD9FE2868CDA100A1ACC7 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		85FCDA002871C13700A1ACC7 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		85FCDA022872BD9600A1ACC7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		85FCDA042872C23F00A1ACC7 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
+		85FCDA062872C25900A1ACC7 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		85FCDA082872C28200A1ACC7 /* AlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		85FCDA0A2872C2BD00A1ACC7 /* SongsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,9 @@
 				85FCD9FA2868B15C00A1ACC7 /* Cells */,
 				85FCD9C92868A82400A1ACC7 /* AuthViewController.swift */,
 				85FCD9FE2868CDA100A1ACC7 /* SingUpViewController.swift */,
+				85FCDA002871C13700A1ACC7 /* AlbumViewController.swift */,
+				85FCDA042872C23F00A1ACC7 /* DetailAlbumViewController.swift */,
+				85FCDA062872C25900A1ACC7 /* UserInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +168,8 @@
 		85FCD9FA2868B15C00A1ACC7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				85FCDA082872C28200A1ACC7 /* AlbumsTableViewCell.swift */,
+				85FCDA0A2872C2BD00A1ACC7 /* SongsCollectionViewController.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -161,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				85FCD9FC2868BD7900A1ACC7 /* UIStackViewExtensions.swift */,
+				85FCDA022872BD9600A1ACC7 /* UIViewControllerExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -299,8 +317,14 @@
 				85FCD9CA2868A82400A1ACC7 /* AuthViewController.swift in Sources */,
 				85FCD9D02868A82400A1ACC7 /* AlbumProject.xcdatamodeld in Sources */,
 				85FCD9C62868A82400A1ACC7 /* AppDelegate.swift in Sources */,
+				85FCDA052872C23F00A1ACC7 /* DetailAlbumViewController.swift in Sources */,
+				85FCDA032872BD9600A1ACC7 /* UIViewControllerExtension.swift in Sources */,
 				85FCD9FF2868CDA100A1ACC7 /* SingUpViewController.swift in Sources */,
+				85FCDA072872C25900A1ACC7 /* UserInfoViewController.swift in Sources */,
 				85FCD9C82868A82400A1ACC7 /* SceneDelegate.swift in Sources */,
+				85FCDA0B2872C2BD00A1ACC7 /* SongsCollectionViewController.swift in Sources */,
+				85FCDA092872C28300A1ACC7 /* AlbumsTableViewCell.swift in Sources */,
+				85FCDA012871C13700A1ACC7 /* AlbumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
