@@ -100,7 +100,6 @@ class AuthViewController: UIViewController {
     private func setupDelegate(){
         emailTextField.delegate = self
         passwordTextField.delegate = self
-        
     }
     
     // MARK: press singIn
@@ -113,8 +112,6 @@ class AuthViewController: UIViewController {
         let singUpViewController = SingUpViewController()
         //self.present(singUpViewController, animated: true, completion: nil)
     }
-
-
 }
 
 // MARK: UITextFieldDelegate
