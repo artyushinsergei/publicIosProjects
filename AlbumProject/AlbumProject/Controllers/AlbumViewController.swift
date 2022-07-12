@@ -10,11 +10,10 @@ import UIKit
 
 class AlbumViewController: UIViewController{
     
-    
     private let tableView: UITableView = {
         let table = UITableView()
         table.backgroundColor = .white
-        table.register(AlbumViewController.self, forCellReuseIdentifier: "cell")
+        table.register(AlbumsTableViewCell.self, forCellReuseIdentifier: "cell")
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
@@ -22,10 +21,11 @@ class AlbumViewController: UIViewController{
     private let serchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
-        
         setupViews()
         setupDelegate()
+        setConstrains()
         setNavigationBar()
+        setupSerchController()
     }
     
     private func setupViews(){

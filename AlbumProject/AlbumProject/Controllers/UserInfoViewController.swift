@@ -59,15 +59,13 @@ class UserInfoViewController: UIViewController{
         
         setupViews()
         setConstrains()
-        
-        
     }
      
     private func setupViews(){
         title = "Active user"
         view.backgroundColor = .white
         
-        stackView = UIStackView(arrangedSubViews: [firstNameLable,lastNameLable,ageLable,phoneLable,emailLable,passwordLable], axis: .horizontal, spasing: 10, distribution: .fillProportionally)
+        stackView = UIStackView(arrangedSubViews: [firstNameLable,lastNameLable,ageLable,phoneLable,emailLable,passwordLable], axis: .vertical, spasing: 10, distribution: .fillProportionally)
         
         view.addSubview(stackView)
     }

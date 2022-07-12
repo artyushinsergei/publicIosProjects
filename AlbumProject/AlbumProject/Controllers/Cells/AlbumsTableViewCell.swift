@@ -11,6 +11,7 @@ import UIKit
 class AlbumsTableViewCell: UITableViewCell{
     private let albumLogo: UIImageView = {
         let image = UIImageView()
+        image.backgroundColor = .red
         image.clipsToBounds = true
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
@@ -56,7 +57,7 @@ class AlbumsTableViewCell: UITableViewCell{
     }
     
     private func setupView(){
-        self.backgroundColor = .clear
+        self.backgroundColor = .white
         self.selectionStyle = .none
         
         self.addSubview(albumLogo)

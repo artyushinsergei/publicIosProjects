@@ -76,8 +76,14 @@ class AuthViewController: UIViewController {
         setupView()
         setupDelegate()
         setConstrains()
-    
+        registerKeybordNotification()
     }
+    
+    //MARK: Удаление observer-ов для registerKeybordNotification
+    deinit{
+        registerKeybordNotification()
+    }
+    
     //Расположение элементов на стратовом экране
     private func setupView(){
         title = "SingIn"
@@ -96,7 +102,7 @@ class AuthViewController: UIViewController {
         backgroundView.addSubview(buttonsStackView)
     }
     
-    // Нажначение для делегатов
+    // Назначение для делегатов
     private func setupDelegate(){
         emailTextField.delegate = self
         passwordTextField.delegate = self
@@ -104,15 +110,43 @@ class AuthViewController: UIViewController {
     
     // MARK: press singIn
     @objc private func singInButtonTapped(){
-        print("SingIn is toched")
+        let navVC = UINavigationController(rootViewController: AlbumViewController())
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC, animated: true)
     }
     
     // MARK: press singUp
     @objc private func singUpButtonTapped(){
         let singUpViewController = SingUpViewController()
-        //self.present(singUpViewController, animated: true, completion: nil)
+        self.present(singUpViewController, animated: true)
     }
 }
+
+// MARK: Observer-ы для сдвижения view при открытие клавиатуры
+extension AuthViewController{
+    
+    private func registerKeybordNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keybordWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keybordWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    private func removeKeybordNofication(){
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+        
+    @objc private func keybordWillShow(notification: Notification){
+        let userInfo = notification.userInfo
+        let keybordHeigth = (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        scrollView.contentOffset = CGPoint(x: 0, y: keybordHeigth.height / 2)
+    }
+    
+    @objc private func keybordWillHide(notification: Notification){
+        scrollView.contentOffset = CGPoint.zero
+    }
+}
+
 
 // MARK: UITextFieldDelegate
 extension AuthViewController: UITextFieldDelegate {

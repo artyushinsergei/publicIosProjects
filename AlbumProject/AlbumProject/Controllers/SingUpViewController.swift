@@ -134,8 +134,17 @@ class SingUpViewController: UIViewController{
     override func viewDidLoad() {
         
         setupView()
+        setConstrains()
+        registerKeybordNotification()
         
     }
+    
+    
+    //MARK: Удаление observer-ов для registerKeybordNotification
+    deinit{
+        registerKeybordNotification()
+    }
+    
     // MARK: SetupView
     private func setupView(){
         title = "Sing Up"
@@ -187,6 +196,31 @@ extension SingUpViewController: UITextFieldDelegate{
     
 }
 
+// MARK: Observer-ы для сдвижения view при открытие клавиатуры
+extension SingUpViewController{
+    
+    private func registerKeybordNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keybordWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keybordWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    private func removeKeybordNofication(){
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+        
+    @objc private func keybordWillShow(notification: Notification){
+        let userInfo = notification.userInfo
+        let keybordHeigth = (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        scrollView.contentOffset = CGPoint(x: 0, y: keybordHeigth.height / 2)
+    }
+    
+    @objc private func keybordWillHide(notification: Notification){
+        scrollView.contentOffset = CGPoint.zero
+    }
+}
+
 // MARK: setConstrains
 extension SingUpViewController{
     
@@ -201,8 +235,8 @@ extension SingUpViewController{
         NSLayoutConstraint.activate([
             backgdoundView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             backgdoundView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor),
-            backgdoundView.topAnchor.constraint(equalTo: view.topAnchor,constant: 0),
-            backgdoundView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            backgdoundView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgdoundView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
         
