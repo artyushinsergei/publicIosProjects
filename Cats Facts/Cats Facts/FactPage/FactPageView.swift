@@ -1,6 +1,6 @@
 //
 //  FirstBiblePageView.swift
-//  Memory
+//  Cats Facts
 //
 //  Created by SERGEI on 20.12.2022.
 //
@@ -85,7 +85,7 @@ extension FactPageView {
             lengthLable.topAnchor.constraint(equalTo: factLable.bottomAnchor, constant: 30),
             lengthLable.leftAnchor.constraint(equalTo: leftAnchor, constant: 45),
             lengthLable.rightAnchor.constraint(equalTo: rightAnchor, constant: -45),
-            //lengthLable.heightAnchor.constraint(equalToConstant: 45)
+            lengthLable.heightAnchor.constraint(equalToConstant: 20)
         ])
     }
 }

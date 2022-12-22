@@ -1,6 +1,6 @@
 //
 //  FirstBiblePageViewController.swift
-//  Memory
+//  Cats Facts
 //
 //  Created by SERGEI on 20.12.2022.
 //

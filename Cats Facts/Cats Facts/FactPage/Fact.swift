@@ -1,6 +1,6 @@
 //
 //  People.swift
-//  Memory
+//  Cats Facts
 //
 //  Created by SERGEI on 13.12.2022.
 //
