@@ -21,7 +21,8 @@ class FirstPageViewController: UINavigationController {
 // MARK: setConfigure
 extension FirstPageViewController {
     private func setConfigure(){
-        firstPageView.firstButton.addTarget(self, action: #selector(firstFactOnClick), for: .touchUpInside)
+        firstPageView.firstButton.addTarget(self, action: #selector(FactOnClick), for: .touchUpInside)
+        firstPageView.secondButton.addTarget(self, action: #selector(FactsListOnClick), for: .touchUpInside)
     }
 }
 
@@ -48,8 +49,14 @@ extension FirstPageViewController {
 
 // MARK: onClick Methods
 extension FirstPageViewController {
-    @objc func firstFactOnClick(){
+    @objc func FactOnClick(){
         let vc = FactPageViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    @objc func FactsListOnClick(){
+        let vc = FactsListViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }

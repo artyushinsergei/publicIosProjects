@@ -19,36 +19,36 @@ class FactPageView: UIView {
     }()
     
     let titleLable: UILabel = {
-        let lable = UILabel()
-        lable.translatesAutoresizingMaskIntoConstraints = false
-        lable.text = "Fact's about cat's"
-        lable.textColor = .black
-        lable.font = UIFont.systemFont(ofSize: 45)
-        return lable
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Fact's about cat's"
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 45)
+        return label
     }()
     
-    let factLable: UILabel = {
-        let lable = UILabel()
-        lable.textColor = .black
-        lable.backgroundColor = .lightText
-        lable.numberOfLines = 0
-        lable.translatesAutoresizingMaskIntoConstraints = false
-        return lable
+    let factLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.backgroundColor = .lightText
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
-    let lengthLable: UILabel = {
-        let lable = UILabel()
-        lable.textColor = .black
-        lable.backgroundColor = .lightText
-        lable.translatesAutoresizingMaskIntoConstraints = false
-        return lable
+    let lengthLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.backgroundColor = .lightText
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(titleLable)
-        addSubview(factLable)
-        addSubview(lengthLable)
+        addSubview(factLabel)
+        addSubview(lengthLabel)
         addSubview(backButton)
         setConstraints()
         
@@ -75,17 +75,17 @@ extension FactPageView {
         ])
         
         NSLayoutConstraint.activate([
-            factLable.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 50),
-            factLable.leftAnchor.constraint(equalTo: leftAnchor, constant: 45),
-            factLable.rightAnchor.constraint(equalTo: rightAnchor, constant: -45),
-            //factLable.heightAnchor.constraint(equalToConstant: 45)
+            factLabel.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 50),
+            factLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 45),
+            factLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -45),
+            //factLabel.heightAnchor.constraint(equalToConstant: 45)
         ])
         
         NSLayoutConstraint.activate([
-            lengthLable.topAnchor.constraint(equalTo: factLable.bottomAnchor, constant: 30),
-            lengthLable.leftAnchor.constraint(equalTo: leftAnchor, constant: 45),
-            lengthLable.rightAnchor.constraint(equalTo: rightAnchor, constant: -45),
-            lengthLable.heightAnchor.constraint(equalToConstant: 20)
+            lengthLabel.topAnchor.constraint(equalTo: factLabel.bottomAnchor, constant: 30),
+            lengthLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 45),
+            lengthLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -45),
+            lengthLabel.heightAnchor.constraint(equalToConstant: 20)
         ])
     }
 }

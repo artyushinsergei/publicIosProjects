@@ -12,12 +12,12 @@ import UIKit
 
 class FirstPageView: UIView {
     private let titleLable: UILabel = {
-        let lable = UILabel()
-        lable.text = "Info about cat's"
-        lable.textColor = .green
-        lable.font = UIFont.systemFont(ofSize: 45)
-        lable.translatesAutoresizingMaskIntoConstraints = false
-        return lable
+        let label = UILabel()
+        label.text = "Info about cat's"
+        label.textColor = .green
+        label.font = UIFont.systemFont(ofSize: 45)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     let firstButton: UIButton = {
@@ -31,7 +31,7 @@ class FirstPageView: UIView {
         return button
     }()
     
-    private let secondButton: UIButton = {
+    let secondButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .black
         button.tintColor = .white

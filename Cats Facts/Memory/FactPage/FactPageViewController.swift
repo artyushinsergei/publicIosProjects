@@ -31,11 +31,11 @@ extension FactPageViewController {
             //print(String(decoding: data!, as: UTF8.self))
             if let data = data, let fact = try? JSONDecoder().decode(Fact.self, from: data) {
                 DispatchQueue.main.sync {
-                    firstFactView.factLable.text = fact.fact
+                    firstFactView.factLabel.text = fact.fact
                    if let fact = fact.length {
-                        firstFactView.lengthLable.text = String("\(fact)")
+                        firstFactView.lengthLabel.text = String("Symbols in fact: \(fact)")
                    } else {
-                        firstFactView.lengthLable.text = "Empty string"
+                        firstFactView.lengthLabel.text = "Empty string"
                     }
                 }
             }
