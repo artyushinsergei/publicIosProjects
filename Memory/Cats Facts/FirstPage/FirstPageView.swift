@@ -26,6 +26,7 @@ class FirstPageView: UIView {
         button.tintColor = .white
         button.layer.cornerRadius = 5
         button.sizeToFit()
+        button.setTitle("Random fact", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -36,26 +37,17 @@ class FirstPageView: UIView {
         button.tintColor = .white
         button.layer.cornerRadius = 5
         button.sizeToFit()
+        button.setTitle("List of the facts", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private let thirdButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .black
-        button.tintColor = .white
-        button.layer.cornerRadius = 5
-        button.sizeToFit()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
         addSubview(titleLable)
         addSubview(firstButton)
         addSubview(secondButton)
-        addSubview(thirdButton)
         setConfigure()
     }
     
@@ -67,9 +59,7 @@ class FirstPageView: UIView {
 // MARK: setConfigure
 extension FirstPageView {
     private func setConfigure(){
-        firstButton.setTitle("First Button", for: .normal)
-        secondButton.setTitle("Second Button", for: .normal)
-        thirdButton.setTitle("Thierd Button", for: .normal)
+        backgroundColor = .white
         setConstraints()
     }
 }
@@ -93,13 +83,6 @@ extension FirstPageView{
             secondButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             secondButton.heightAnchor.constraint(equalToConstant: 30),
             secondButton.widthAnchor.constraint(equalToConstant: 150)
-        ])
-        
-        NSLayoutConstraint.activate([
-            thirdButton.topAnchor.constraint(equalTo: secondButton.bottomAnchor, constant: 15),
-            thirdButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            thirdButton.heightAnchor.constraint(equalToConstant: 30),
-            thirdButton.widthAnchor.constraint(equalToConstant: 150)
         ])
     }
 }

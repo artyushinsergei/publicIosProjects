@@ -31,9 +31,6 @@ class FactPageView: UIView {
         let lable = UILabel()
         lable.textColor = .black
         lable.backgroundColor = .lightText
-        lable.layer.cornerRadius = 15
-        lable.layer.borderWidth = 1
-        lable.sizeToFit()
         lable.numberOfLines = 0
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
@@ -43,8 +40,6 @@ class FactPageView: UIView {
         let lable = UILabel()
         lable.textColor = .black
         lable.backgroundColor = .lightText
-        lable.layer.cornerRadius = 15
-        lable.layer.borderWidth = 1
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()
@@ -56,6 +51,8 @@ class FactPageView: UIView {
         addSubview(lengthLable)
         addSubview(backButton)
         setConstraints()
+        
+        
     }
        
     required init?(coder: NSCoder) {

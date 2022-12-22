@@ -29,6 +29,7 @@ extension FirstPageViewController {
 extension FirstPageViewController{
     private func setupView(){
         view.addSubview(firstPageView)
+        
     }
 }
 

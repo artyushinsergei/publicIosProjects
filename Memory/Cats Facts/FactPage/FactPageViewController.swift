@@ -32,12 +32,11 @@ extension FactPageViewController {
             if let data = data, let fact = try? JSONDecoder().decode(Fact.self, from: data) {
                 DispatchQueue.main.sync {
                     firstFactView.factLable.text = fact.fact
-//                    if let fact = fact.length ?? {
-                        firstFactView.lengthLable.text = String("\(fact.length)")
-//                    }else {
-//                        return nil
-//                    }
-                    
+                   if let fact = fact.length {
+                        firstFactView.lengthLable.text = String("\(fact)")
+                   } else {
+                        firstFactView.lengthLable.text = "Empty string"
+                    }
                 }
             }
         }

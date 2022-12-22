@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		85D73A072948C21E00AC70F9 /* Memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D73A072948C21E00AC70F9 /* Cats Facts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cats Facts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D73A0A2948C21E00AC70F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D73A0C2948C21E00AC70F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		85D73A0E2948C21E00AC70F9 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		85D739FE2948C21E00AC70F9 = {
 			isa = PBXGroup;
 			children = (
-				85D73A092948C21E00AC70F9 /* Memory */,
+				85D73A092948C21E00AC70F9 /* Cats Facts */,
 				85D73A082948C21E00AC70F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		85D73A082948C21E00AC70F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85D73A072948C21E00AC70F9 /* Memory.app */,
+				85D73A072948C21E00AC70F9 /* Cats Facts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85D73A092948C21E00AC70F9 /* Memory */ = {
+		85D73A092948C21E00AC70F9 /* Cats Facts */ = {
 			isa = PBXGroup;
 			children = (
 				85ED6CE72951D01600ADCE79 /* FactPage */,
@@ -70,7 +70,7 @@
 				85D73A152948C22100AC70F9 /* LaunchScreen.storyboard */,
 				85D73A182948C22100AC70F9 /* Info.plist */,
 			);
-			path = Memory;
+			path = "Cats Facts";
 			sourceTree = "<group>";
 		};
 		85D73A1E2948C6EA00AC70F9 /* FirstPage */ = {
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85D73A062948C21E00AC70F9 /* Memory */ = {
+		85D73A062948C21E00AC70F9 /* Cats Facts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85D73A1B2948C22100AC70F9 /* Build configuration list for PBXNativeTarget "Memory" */;
+			buildConfigurationList = 85D73A1B2948C22100AC70F9 /* Build configuration list for PBXNativeTarget "Cats Facts" */;
 			buildPhases = (
 				85D73A032948C21E00AC70F9 /* Sources */,
 				85D73A042948C21E00AC70F9 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = Memory;
+			name = "Cats Facts";
 			productName = Memory;
-			productReference = 85D73A072948C21E00AC70F9 /* Memory.app */;
+			productReference = 85D73A072948C21E00AC70F9 /* Cats Facts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 85D73A022948C21E00AC70F9 /* Build configuration list for PBXProject "Memory" */;
+			buildConfigurationList = 85D73A022948C21E00AC70F9 /* Build configuration list for PBXProject "Cats Facts" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85D73A062948C21E00AC70F9 /* Memory */,
+				85D73A062948C21E00AC70F9 /* Cats Facts */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +310,7 @@
 				DEVELOPMENT_TEAM = 9YCHZYVS3V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Memory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cats Facts";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -337,6 +338,7 @@
 				DEVELOPMENT_TEAM = 9YCHZYVS3V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Memory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cats Facts";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -357,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85D73A022948C21E00AC70F9 /* Build configuration list for PBXProject "Memory" */ = {
+		85D73A022948C21E00AC70F9 /* Build configuration list for PBXProject "Cats Facts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85D73A192948C22100AC70F9 /* Debug */,
@@ -366,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85D73A1B2948C22100AC70F9 /* Build configuration list for PBXNativeTarget "Memory" */ = {
+		85D73A1B2948C22100AC70F9 /* Build configuration list for PBXNativeTarget "Cats Facts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85D73A1C2948C22100AC70F9 /* Debug */,
