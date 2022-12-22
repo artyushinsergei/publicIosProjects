@@ -9,17 +9,18 @@ import Foundation
 import UIKit
 
 
+
 class FirstPageView: UIView {
     private let titleLable: UILabel = {
         let lable = UILabel()
-        lable.text = "Bible"
-        lable.textColor = .yellow
-        lable.font = UIFont.boldSystemFont(ofSize: 80)
+        lable.text = "Info about cat's"
+        lable.textColor = .green
+        lable.font = UIFont.systemFont(ofSize: 45)
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()
     
-    private let firstButton: UIButton = {
+    let firstButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .black
         button.tintColor = .white
@@ -51,8 +52,6 @@ class FirstPageView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-
-        backgroundColor = .lightText
         addSubview(titleLable)
         addSubview(firstButton)
         addSubview(secondButton)
@@ -63,17 +62,21 @@ class FirstPageView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+}
+
+// MARK: setConfigure
+extension FirstPageView {
     private func setConfigure(){
         firstButton.setTitle("First Button", for: .normal)
         secondButton.setTitle("Second Button", for: .normal)
         thirdButton.setTitle("Thierd Button", for: .normal)
-        setConstrains()
+        setConstraints()
     }
 }
 
+// MARK: setConstraints
 extension FirstPageView{
-    private func setConstrains(){
+    private func setConstraints(){
         NSLayoutConstraint.activate([
             titleLable.centerXAnchor.constraint(equalTo: centerXAnchor),
             titleLable.topAnchor.constraint(equalTo: topAnchor, constant: 130)

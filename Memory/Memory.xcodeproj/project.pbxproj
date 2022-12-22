@@ -13,7 +13,9 @@
 		85D73A142948C22100AC70F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D73A132948C22100AC70F9 /* Assets.xcassets */; };
 		85D73A172948C22100AC70F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D73A152948C22100AC70F9 /* LaunchScreen.storyboard */; };
 		85D73A202948C73700AC70F9 /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73A1F2948C73700AC70F9 /* FirstPageView.swift */; };
-		85D73A222948EEB100AC70F9 /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73A212948EEB100AC70F9 /* Bible.swift */; };
+		85D73A222948EEB100AC70F9 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73A212948EEB100AC70F9 /* Fact.swift */; };
+		85ED6CE92951D05500ADCE79 /* FactPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED6CE82951D05500ADCE79 /* FactPageViewController.swift */; };
+		85ED6CEB2951EF2200ADCE79 /* FactPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ED6CEA2951EF2200ADCE79 /* FactPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		85D73A162948C22100AC70F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D73A182948C22100AC70F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D73A1F2948C73700AC70F9 /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
-		85D73A212948EEB100AC70F9 /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		85D73A212948EEB100AC70F9 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		85ED6CE82951D05500ADCE79 /* FactPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactPageViewController.swift; sourceTree = "<group>"; };
+		85ED6CEA2951EF2200ADCE79 /* FactPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,10 @@
 		85D73A092948C21E00AC70F9 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
+				85ED6CE72951D01600ADCE79 /* FactPage */,
+				85D73A1E2948C6EA00AC70F9 /* FirstPage */,
 				85D73A0A2948C21E00AC70F9 /* AppDelegate.swift */,
 				85D73A0C2948C21E00AC70F9 /* SceneDelegate.swift */,
-				85D73A1E2948C6EA00AC70F9 /* FirstPage */,
 				85D73A132948C22100AC70F9 /* Assets.xcassets */,
 				85D73A152948C22100AC70F9 /* LaunchScreen.storyboard */,
 				85D73A182948C22100AC70F9 /* Info.plist */,
@@ -73,9 +78,18 @@
 			children = (
 				85D73A0E2948C21E00AC70F9 /* FirstPageViewController.swift */,
 				85D73A1F2948C73700AC70F9 /* FirstPageView.swift */,
-				85D73A212948EEB100AC70F9 /* Bible.swift */,
 			);
 			path = FirstPage;
+			sourceTree = "<group>";
+		};
+		85ED6CE72951D01600ADCE79 /* FactPage */ = {
+			isa = PBXGroup;
+			children = (
+				85ED6CE82951D05500ADCE79 /* FactPageViewController.swift */,
+				85ED6CEA2951EF2200ADCE79 /* FactPageView.swift */,
+				85D73A212948EEB100AC70F9 /* Fact.swift */,
+			);
+			path = FactPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85ED6CEB2951EF2200ADCE79 /* FactPageView.swift in Sources */,
 				85D73A0F2948C21E00AC70F9 /* FirstPageViewController.swift in Sources */,
 				85D73A202948C73700AC70F9 /* FirstPageView.swift in Sources */,
 				85D73A0B2948C21E00AC70F9 /* AppDelegate.swift in Sources */,
 				85D73A0D2948C21E00AC70F9 /* SceneDelegate.swift in Sources */,
-				85D73A222948EEB100AC70F9 /* Bible.swift in Sources */,
+				85D73A222948EEB100AC70F9 /* Fact.swift in Sources */,
+				85ED6CE92951D05500ADCE79 /* FactPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
