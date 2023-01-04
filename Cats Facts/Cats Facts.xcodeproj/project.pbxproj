@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		85199D182954D8BD00E5F70F /* FactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85199D172954D8BD00E5F70F /* FactsListViewController.swift */; };
 		85199D1A2954D96C00E5F70F /* FactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85199D192954D96C00E5F70F /* FactsListView.swift */; };
+		85AC32B6295885400065AC20 /* Facts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC32B5295885400065AC20 /* Facts.swift */; };
+		85CEF0D829573CB800EFD4FC /* FactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEF0D729573CB800EFD4FC /* FactCollectionViewCell.swift */; };
 		85D73A0B2948C21E00AC70F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73A0A2948C21E00AC70F9 /* AppDelegate.swift */; };
 		85D73A0D2948C21E00AC70F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73A0C2948C21E00AC70F9 /* SceneDelegate.swift */; };
 		85D73A0F2948C21E00AC70F9 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73A0E2948C21E00AC70F9 /* FirstPageViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		85199D172954D8BD00E5F70F /* FactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListViewController.swift; sourceTree = "<group>"; };
 		85199D192954D96C00E5F70F /* FactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListView.swift; sourceTree = "<group>"; };
+		85AC32B5295885400065AC20 /* Facts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facts.swift; sourceTree = "<group>"; };
+		85CEF0D729573CB800EFD4FC /* FactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCollectionViewCell.swift; sourceTree = "<group>"; };
 		85D73A072948C21E00AC70F9 /* Cats Facts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cats Facts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D73A0A2948C21E00AC70F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85D73A0C2948C21E00AC70F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,10 +54,20 @@
 		85199D162954D89300E5F70F /* FactsList */ = {
 			isa = PBXGroup;
 			children = (
+				85CEF0D629573C8F00EFD4FC /* FactCollection */,
 				85199D172954D8BD00E5F70F /* FactsListViewController.swift */,
 				85199D192954D96C00E5F70F /* FactsListView.swift */,
+				85AC32B5295885400065AC20 /* Facts.swift */,
 			);
 			path = FactsList;
+			sourceTree = "<group>";
+		};
+		85CEF0D629573C8F00EFD4FC /* FactCollection */ = {
+			isa = PBXGroup;
+			children = (
+				85CEF0D729573CB800EFD4FC /* FactCollectionViewCell.swift */,
+			);
+			path = FactCollection;
 			sourceTree = "<group>";
 		};
 		85D739FE2948C21E00AC70F9 = {
@@ -176,12 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CEF0D829573CB800EFD4FC /* FactCollectionViewCell.swift in Sources */,
 				85ED6CEB2951EF2200ADCE79 /* FactPageView.swift in Sources */,
 				85D73A0F2948C21E00AC70F9 /* FirstPageViewController.swift in Sources */,
 				85199D1A2954D96C00E5F70F /* FactsListView.swift in Sources */,
 				85D73A202948C73700AC70F9 /* FirstPageView.swift in Sources */,
 				85D73A0B2948C21E00AC70F9 /* AppDelegate.swift in Sources */,
 				85199D182954D8BD00E5F70F /* FactsListViewController.swift in Sources */,
+				85AC32B6295885400065AC20 /* Facts.swift in Sources */,
 				85D73A0D2948C21E00AC70F9 /* SceneDelegate.swift in Sources */,
 				85D73A222948EEB100AC70F9 /* Fact.swift in Sources */,
 				85ED6CE92951D05500ADCE79 /* FactPageViewController.swift in Sources */,

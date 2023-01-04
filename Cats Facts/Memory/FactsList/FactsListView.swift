@@ -34,6 +34,18 @@ class FactsListView: UIView {
         return textField
     }()
     
+    private let showResultButton: UIButton = {
+        let button = UIButton()
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitle("Show the result", for: .normal)
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -52,6 +64,7 @@ extension FactsListView{
         addSubview(title)
         addSubview(maxLength)
         addSubview(amountResults)
+        addSubview(showResultButton)
         
     }
 }
@@ -69,5 +82,18 @@ extension FactsListView {
             maxLength.leftAnchor.constraint(equalTo: leftAnchor, constant: 30),
             maxLength.rightAnchor.constraint(equalTo: rightAnchor, constant: -30),
         ])
+        
+        NSLayoutConstraint.activate([
+            amountResults.topAnchor.constraint(equalTo: maxLength.bottomAnchor, constant: 30),
+            amountResults.leftAnchor.constraint(equalTo: leftAnchor, constant: 30),
+            amountResults.rightAnchor.constraint(equalTo: rightAnchor, constant: -30),
+        ])
+        
+        NSLayoutConstraint.activate([
+            showResultButton.topAnchor.constraint(equalTo: amountResults.bottomAnchor, constant: 15),
+            showResultButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 30),
+            showResultButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -30)
+        ])
+        
     }
 }
