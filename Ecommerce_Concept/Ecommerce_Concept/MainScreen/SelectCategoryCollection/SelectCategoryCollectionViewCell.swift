@@ -41,6 +41,13 @@ extension SelectCategoryCollectionViewCell {
     }
 }
 
+extension SelectCategoryCollectionViewCell{
+    func configure(model: Mock){
+        cellImage.image = model.image
+        cellTitle.text = model.title
+    }
+}
+
 // MARK: setupConstraints
 extension SelectCategoryCollectionViewCell {
     private func setupConstraints(){
@@ -52,9 +59,8 @@ extension SelectCategoryCollectionViewCell {
         
         NSLayoutConstraint.activate([
             cellTitle.centerXAnchor.constraint(equalTo: centerXAnchor),
-            cellTitle.topAnchor.constraint(equalTo: cellImage.bottomAnchor)
+            cellTitle.topAnchor.constraint(equalTo: cellImage.bottomAnchor, constant: 10)
             
         ])
-        
     }
 }

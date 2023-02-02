@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: UIView {
+class UpperSelectionSection: UIView {
     
     private let selectCategoryLabel: UILabel = {
         let label = UILabel()
@@ -51,7 +51,7 @@ class MainView: UIView {
 }
 
 // MARK: setupView
-extension MainView{
+extension UpperSelectionSection{
     private func setupView(){
         backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
         headerHorizontalStack.addArrangedSubview(selectCategoryLabel)
@@ -62,7 +62,7 @@ extension MainView{
 }
 
 // MARK: setConstraints
-extension MainView{
+extension UpperSelectionSection{
     private func setConstraints(){
         NSLayoutConstraint.activate([
             headerHorizontalStack.topAnchor.constraint(equalTo: topAnchor),
